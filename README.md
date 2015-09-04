@@ -1,2 +1,23 @@
-# jetspider-cource
-JavaScript to SpiderMonkey VM byte code compiler.  This compiler is a part of a lecture, the code generator is incomplete.
+# JetSpider for the "Programming Paradigm" Course
+
+This is the JetSpider compiler template for "Programming Paradigm" course.
+The code generator is intentionally incomplete.
+
+## Prerequisite
+
+- Ruby 2.0
+- Bundler
+
+## Usage
+
+```
+% bundle install
+% bundle exec jetspider --help
+```
+
+## License
+
+MIT license, except jsvm.
+
+jsvm is licensed under the same license as SpiderMonkey (MPL / GPL / LGPL).
+See https://github.com/aamine/jetspider-vm for details.

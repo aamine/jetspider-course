@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'jetspider/disassembler'
+
+jsc_path = ARGV[0]
+
+disasm = JetSpider::Disassembler.new
+disasm.disassemble_file(jsc_path, $stdout)
