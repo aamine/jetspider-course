@@ -7,6 +7,7 @@ The code generator is intentionally incomplete.
 
 - Ruby 2.0
 - Bundler
+- Precompiled jsvm binary works only on Mac OS X 10.10 (Yosemite)
 
 ## Usage
 
