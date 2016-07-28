@@ -1,19 +1,19 @@
-# JetSpider for the "Programming Paradigm" Course
+# JetSpider Compiler Skelton for the "Programming Paradigm" Course
 
-This is the JetSpider compiler template for "Programming Paradigm" course.
-The code generator is intentionally incomplete.
+This is the JetSpider compiler skelton for "Programming Paradigm" course.
+You must complete code generator (lib/jetspider/code_generator.rb) to get to work.
 
 ## Prerequisite
 
-- Ruby 2.0
+- Ruby 2.x
 - Bundler
-- Precompiled jsvm binary works only on Mac OS X 10.10 (Yosemite)
+- Precompiled jsvm binary works only on Mac OS X 10.11 (El Capitan)
 
 ## Usage
 
 ```
-% bundle install
-% bundle exec jetspider --help
+% bundle
+% ./bin/jetspider --help
 ```
 
 ## License
