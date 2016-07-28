@@ -86,19 +86,6 @@ module JetSpider
       end
     end
 
-    # utility command
-    def int(num)
-      case num
-      #when 0 then zero
-      #when 1 then one
-      when -128 .. 127 then int8(num)
-      when 128 .. 2**16-1 then uint16(num)
-      when 2**16 .. 2**24-1 then uint24(num)
-      when -(2**31) .. 2**31-1 then int32(num)
-      else raise ArgumentError, "immediate integer value out of range: #{num}"
-      end
-    end
-
     def int8(num)
       put_insn 'int8', ObjectFile.int8(num)
     end
