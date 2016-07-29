@@ -201,8 +201,8 @@ module JetSpider
     end
 
     def visit_SubtractNode(n)
-      visit node.left
-      visit node.value
+      visit n.left
+      visit n.value
       @asm.sub
     end
 
