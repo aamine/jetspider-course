@@ -109,7 +109,17 @@ module JetSpider
     #
 
     def visit_ResolveNode(n)
-      raise NotImplementedError, 'ResolveNode'
+      var = n.variable
+      case
+      when var.parameter?
+        raise NotImplementedError, 'ResolveNode - parameter'
+      when var.local?
+        raise NotImplementedError, 'ResolveNode - local'
+      when var.global?
+        @asm.getgname var.name
+      else
+        raise "[FATAL] unsupported variable type for dereference: #{var.inspect}"
+      end
     end
 
     def visit_OpEqualNode(n)
